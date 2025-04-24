@@ -1,0 +1,43 @@
+{% extends 'admin/master.html' %}
+
+{% block body %}
+<div class="container-fluid mt-4">
+  <h2 class="mb-4">Notifications</h2>
+  <table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Message</th>
+        <th scope="col">Type</th>
+        <th scope="col">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>New user <strong>John Doe</strong> registered.</td>
+        <td><span class="badge bg-success">Info</span></td>
+        <td>April 24, 2025</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Server CPU usage exceeded 85%.</td>
+        <td><span class="badge bg-warning">Warning</span></td>
+        <td>April 23, 2025</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Database backup completed successfully.</td>
+        <td><span class="badge bg-primary">Success</span></td>
+        <td>April 22, 2025</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Failed login attempt detected from IP 192.168.1.100.</td>
+        <td><span class="badge bg-danger">Alert</span></td>
+        <td>April 21, 2025</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}
